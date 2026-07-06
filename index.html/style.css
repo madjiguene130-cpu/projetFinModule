@@ -1,0 +1,629 @@
+body {
+    background: #f4f4f4;
+    color: #333;
+    font-family: 'poppins' sans-serif;
+}
+
+
+
+
+.navbar {
+    background: #fafbfc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 15px 40px;
+    gap: 20px;
+    color: #eef1f5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+
+}
+
+.logo img {
+    height: 59px;
+   
+}
+
+.logo-text {
+    color: rgb(29, 29, 87);
+    font-family: 'Times New Roman', Times, serif;
+    width: 250px;
+
+}
+.logo-text h1{
+    margin: 0;
+    font-size: 40px;
+
+}
+
+.logo-text p {
+    margin: 0;
+    line-height: 1.3;
+    font-size: 13px;
+   
+
+
+
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: auto;
+
+}
+
+.menu a {
+    color: rgb(29, 29, 87);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+     padding-top: 19px;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* survol */
+.menu a:hover{
+    background: #f4c400;
+    color: white;
+}
+/* bouton accueil */
+.menu li:first-child a{
+    background: rgb(29, 29, 87);
+    color: white;
+}
+
+
+
+/* BANNIERE ECOLE AVEC FROM */
+.hero-ecole {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+        url('images/etudiant2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+
+}
+
+
+/* TEXTE A DROITE */
+.hero-texte {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    color: white;
+
+}
+
+.hero-texte h1 {
+    font-size: 45px;
+    font-weight: 150;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    font-family: 'Times New Roman', Times, serif;
+     text-shadow: 8px rgba(0, 0, 0, 0.6);
+     white-space: nowrap;
+  display: inline-block;
+  animation: defile 12s linear infinite;
+}
+
+/* Animation */
+@keyframes defile {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.hero-texte p {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 26px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    line-height: 1.6;
+    margin-bottom: 1px;
+    margin-top: auto;
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+.btn {
+    display: inline-block;
+    background: #D4A017;
+    color: #0A1F3D;
+    border: none;
+    padding: 8px;
+    font-size: 20px;
+    margin-left: 100px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 180px;
+    margin-top: 40px;
+
+}
+
+
+
+
+
+
+.formation {
+    text-align: center;
+    color: rgb(29, 29, 87);
+    margin-top: 90px;
+
+
+
+}
+
+
+
+
+.cadres {
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+    padding: 40px;
+    background-color: white;
+    
+}
+
+ 
+h2 {
+
+    text-align: center;
+    color: rgb(29, 29, 87);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.cardff {
+    width: 240px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cardff img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.cardff h3 {
+    margin: 15px 0;
+    color: rgb(29, 29, 87);
+}
+
+.cardff p {
+    padding: 0 15px;
+    color: rgb(29, 29, 87);
+}
+
+.cardff a {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #e3a200;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+:root {
+    --blue: #0B1F3A;
+    --gold: #e3a200;
+    --white: #ffffff;
+}
+
+/* SECTION PRINCIPALE */
+.about-section {
+    padding: 80px 10%;
+    background: var(--white);
+    font-family: Arial, sans-serif;
+
+}
+
+/* TITRE */
+.about-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-title h2 {
+    font-size: 2.8rem;
+    color: var(--blue);
+}
+
+
+.about-title p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* GRILLE */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* CARTE */
+.card {
+    background: var(--blue);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.4s;
+    overflow: hidden;
+    width: 90%;
+    max-width: 300;
+    height: 250px;
+    margin: 20px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+/* ligne dorée décorative */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--gold);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* TITRE CARTE */
+.card h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+/* TEXTE */
+.card p {
+    line-height: 1.7;
+    color: #f1f1f1;
+}
+
+/* BOUTON OPTIONNEL */
+.card button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: var(--gold);
+    color: var(--blue);
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+
+/* SECTION */
+.team-section {
+    display: flex;
+    min-height: 600px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+
+}
+
+.equipe {
+    margin-top: 100px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+
+}
+
+.equipe h2 {
+    margin-bottom: 20px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.equipe p {
+    margin-top: 0;
+}
+
+/* GAUCHE (JAUNE) */
+.team-left {
+    width: 40%;
+    background: var(--gold);
+    color: var(--blue);
+    padding: 80px 50px;
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+
+/* DIAGONALE VRAIE (transition vers bleu) */
+.team-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -80px;
+    width: 160px;
+    height: 100%;
+    background: var(--blue);
+    transform: skewX(-12deg);
+    z-index: 1;
+}
+
+/* DROITE (jaune) */
+.team-right {
+    width: 60%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+    color: #0b1f3a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MEMBRES */
+.member {
+    text-align: center;
+}
+
+.member img {
+    width: 150px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid var(--gold);
+    transition: 0.4s;
+
+
+}
+
+.member img:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px) {
+    .team-section {
+        flex-direction: column;
+    }
+
+    .team-left,
+    .team-right {
+        width: 100%;
+    }
+
+    .team-left::after {
+        display: none;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-section {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    margin-top: 100px;
+}
+
+/* Informations */
+.contact-info {
+    flex: 1;
+    background: white;
+    color: #0b1f3a;
+    padding: 40px;
+}
+
+.contact-info h2 {
+    color: #0b1f3a;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.info-box {
+    border: 2px solid #0b1f3a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Formulaire */
+.contact-form {
+    flex: 1;
+    padding: 40px;
+    background: #e3a200;
+}
+
+.contact-form h2 {
+    color: #0b1f3a;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+.submi {
+    position: relative;
+    background: #0B1F3A;
+    /* bleu foncé */
+    color: white;
+    /* blanc */
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* Effet de lumière */
+.submi::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 40px;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: rotate(25deg);
+    animation: shine 2.5s infinite;
+}
+
+/* Animation du reflet */
+@keyframes shine {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+/* effet au survol */
+.submi:hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+
+    body {
+        background-color: #fff8e1;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        background-color: #0b3d91;
+    }
+
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
